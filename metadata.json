@@ -1,0 +1,5 @@
+{
+  "name": "CodeAgent Reviewer",
+  "description": "A multi-agent AI system that audits GitHub repositories, simulates specialized agent workflows, and generates comprehensive hiring reports with code proofs.",
+  "requestFramePermissions": []
+}
