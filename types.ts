@@ -18,6 +18,7 @@ export interface DetailedFinding {
   suggestion: string;
   code_snippet: string;
   line_numbers: string;
+  highlighted_lines?: number[];  // NEW: Optional array of line numbers to highlight
 }
 
 export interface FinalReport {

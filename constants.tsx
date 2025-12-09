@@ -28,4 +28,4 @@ export const AGENTS: AgentDefinition[] = [
   },
 ];
 
-export const MOCK_REPORT_DELAY_MS = 5000; // Duration per agent (5 seconds)
+export const MOCK_REPORT_DELAY_MS = 1000; // Duration per agent (1 second)

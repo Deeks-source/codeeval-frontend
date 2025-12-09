@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for code blocks */
+.code-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.code-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.code-scroll::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+/* Animation delays */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* CODE SYNTAX HIGHLIGHTING - VS Code Style */
+.code-block {
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Light theme syntax colors */
+.code-block .keyword { color: #0000FF; font-weight: 600; } /* Blue - for, def, class, import */
+.code-block .string { color: #A31515; } /* Red - strings */
+.code-block .comment { color: #008000; font-style: italic; } /* Green - comments */
+.code-block .function { color: #795E26; } /* Brown - function names */
+.code-block .number { color: #098658; } /* Green - numbers */
+.code-block .operator { color: #000000; } /* Black - =, +, - */
+.code-block .variable { color: #001080; } /* Blue - variables */
+
+/* Dark theme syntax colors */
+.dark .code-block .keyword { color: #569CD6; font-weight: 600; } /* Light Blue */
+.dark .code-block .string { color: #CE9178; } /* Orange */
+.dark .code-block .comment { color: #6A9955; font-style: italic; } /* Green */
+.dark .code-block .function { color: #DCDCAA; } /* Yellow */
+.dark .code-block .number { color: #B5CEA8; } /* Light Green */
+.dark .code-block .operator { color: #D4D4D4; } /* Light Gray */
+.dark .code-block .variable { color: #9CDCFE; } /* Cyan */
